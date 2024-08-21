@@ -1,0 +1,131 @@
+/* General styles */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #F8F9FA; /* Background color */
+  color: #343A40; /* Text color */
+}
+
+/* Search bar */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #DC3545; /* Red for the clear button */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #C82333; /* Darker red on hover */
+}
+
+/* Category styles */
+.category {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #FFFFFF; /* Widget background */
+  border: 1px solid #DEE2E6; /* Border color */
+  border-radius: 8px;
+}
+
+/* Widget styles */
+.widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.widget {
+  background: #FFFFFF; /* Widget background */
+  border: 1px solid #DEE2E6; /* Border color */
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  flex: 1 1 calc(33.333% - 20px); /* 3 widgets per row */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Remove icon */
+.remove-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: #DC3545; /* Red for the remove icon */
+}
+
+/* Form styles */
+form {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Input fields */
+input {
+  padding: 10px;
+  flex: 1;
+  min-width: 100px;
+  box-sizing: border-box;
+  border: 1px solid #DEE2E6; /* Border color */
+  border-radius: 4px;
+  background-color: #F8F9FA; /* Input background */
+  color: #343A40; /* Text color */
+}
+
+/* Button styles */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28A745; /* Accent color */
+  color: #FFFFFF; /* Button text color */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .widget {
+    flex: 1 1 calc(50% - 20px); /* 2 widgets per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .widget {
+    flex: 1 1 100%; /* 1 widget per row */
+  }
+
+  .App {
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

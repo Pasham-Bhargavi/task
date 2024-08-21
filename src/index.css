@@ -1,0 +1,38 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+.widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.widget {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  position: relative;
+}
+
+.remove-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 10px;
+}
+
+input {
+  margin-right: 5px;
+  padding: 5px;
+}
